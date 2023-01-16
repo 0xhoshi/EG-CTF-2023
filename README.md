@@ -447,11 +447,11 @@ https://eliteghost.tech/unknown/
 ```
 The flag is in the website and is written in white text to make it invisible, so you need to inspect it in order to get the flag.
 
-![patutnya]()
+![patutnya](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/WEB/MATERIAL/Screenshot%202023-01-17%20024748.png?raw=true)
 
 Luckily, I have dark reader extension so i got the flag right away just like that
 
-![takpatut]()
+![takpatut](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/WEB/MATERIAL/Screenshot%202023-01-17%20024814.png?raw=true)
 
 flag : -
 ```
@@ -463,7 +463,7 @@ EG{G1nZ_1s_H3r3}
 
 ![wechal](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/WEB/Screenshot%202023-01-16%20212517.png?raw=true)
 
-We were provided with a [link](https://eliteghost.tech/wall-e/) that will make you feel alone : -
+We were provided with a [link](https://eliteghost.tech/wall-e/) that will make you feel lonely : -
 ```
 https://eliteghost.tech/wall-e/
 ```
@@ -491,7 +491,7 @@ https://eliteghost.tech/wall-e/s3cr3t1337
 
 Just like ```Error 500``` chal, You supposed to to inspect it in order to get the flag. Lucky me I have dark reader extension so I got the flag right away but is is Base64 Encoded
 
-![pages3cr3t]()
+![pages3cr3t](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/WEB/MATERIAL/Screenshot%202023-01-17%20030456.png?raw=true)
 
 Decode it and we get the flag.
 
@@ -531,7 +531,7 @@ EG{JU57_K1DD1NG}
 
 This challenge provide us with an image that shows a morse code for numbers and a link
 
-![gamabr]()
+![gamabr](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/WEB/MATERIAL/morsecode(2).png?raw=true)
 
 Go to the [link](https://eliteghost.tech/IV.html) and it says : -
 ```
@@ -579,11 +579,11 @@ So I bring up [aperisolve.com](https://www.aperisolve.com) to know more in detai
 
 There is quite a bit of text in this ZSteg section 
 
-![zsteg]()
+![zsteg](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/WEB/MATERIAL/Screenshot%202023-01-17%20033803.png?raw=true)
 
 Look thoroughly and found the flag : -
 
-![falgzst]()
+![falgzst](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/WEB/MATERIAL/Screenshot%202023-01-17%20033841.png?raw=true)
 
 flag : -
 ```

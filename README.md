@@ -174,7 +174,7 @@ EG{L0T5_0F_M3M0R135}
 ```
 
 
-## Thirsty
+### Thirsty
 ![thirsty chal](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/OSINT/Screenshot%202023-01-16%20213132.png?raw=true)
 
 Long story short, Pikachu wants Starbucks's Frappuccino.
@@ -328,7 +328,7 @@ EG{REST_WITH_COFFEE}
 ```
 
 
-## SixSenses
+### SixSenses
 ![sixsenses chal](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/OSINT/Screenshot%202023-01-16%20213156.png?raw=true)
 
 Apart from ```Oldest Historical Tree```, This is another challenge that I found to be very interesting
@@ -364,7 +364,7 @@ The second highlights shows an order on how to get the flag right : -
 
 We already got an ```eye```, the remaining are ```ear```, ```tongue``` and ```nose```
 
-### Ear
+#### Ear
 
 ![telinga](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/OSINT/MATERIAL/Screenshot%202023-01-17%20014830.png?raw=true)
 
@@ -375,7 +375,7 @@ The second part of the flag is : -
 _S3NS3
 ```
 
-### Tongue
+#### Tongue
 
 ![lidah](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/OSINT/MATERIAL/Screenshot%202023-01-17%20020321.png?raw=true)
 
@@ -393,7 +393,7 @@ Decode it and we get the third part of the flag : -
 ```
 IS_SO
 ```
-### Nose
+#### Nose
 
 ![hidung](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/OSINT/MATERIAL/Screenshot%202023-01-17%20015210.png?raw=true)
 
@@ -412,5 +412,117 @@ Combine all parts with an order of ```eye, ear, tongue, nose``` and we got the f
 
 flag : -
 ```
-S1X_S3NS3_IS_SO_R4R3}
+EG{S1X_S3NS3_IS_SO_R4R3}
 ```
+
+---------------------------------------------------------------------------
+
+## Web
+### Japan
+
+![japanchal](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/WEB/Screenshot%202023-01-16%20212415.png?raw=true)
+
+This challenge provide us with a link to a Japan website that is [jprs.jp](https://jprs.jp/) and a pdf file called ```admin-sign-3.pdf``` that requires password.
+
+Using [whois](https://www.whois.com) website I managed to find the admin sign-key that is : -
+```
+4D06600DDB3967F38997FA74706624E3DB15159464A4F0E4C27F7DABC8E0E7A6
+```
+
+Use it as a password to ```admin-sign-3.pdf``` and we can access the pdf, the flag is contain inside the file.
+
+flag : -
+```
+EG{WH01S_L00KUP_1S_34SY}
+```
+
+
+### Error 500
+
+![error500chal](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/WEB/Screenshot%202023-01-16%20212457.png?raw=true)
+
+We were provided with a [domain](https://eliteghost.tech/unknown/) that is : -
+```
+https://eliteghost.tech/unknown/
+```
+The flag is in the website and is written in white text to make it invisible, so you need to inspect it in order to get the flag.
+
+![patutnya]()
+
+Luckily, I have dark reader extension so i got the flag right away just like that
+
+![takpatut]()
+
+flag : -
+```
+EG{G1nZ_1s_H3r3}
+```
+
+
+### EVE
+
+![wechal](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/WEB/Screenshot%202023-01-16%20212517.png?raw=true)
+
+We were provided with a [link](https://eliteghost.tech/wall-e/) that will make you feel alone : -
+```
+https://eliteghost.tech/wall-e/
+```
+
+Even the Robot Already has a partner? Seriously? me when : (
+
+And yes, as you can see the hint is already there, its about robot
+
+So I try to get the list of directories using ```robots.txt``` the link will look like this : -
+```
+https://eliteghost.tech/wall-e/robots.txt
+```
+
+I look for directory that have weird name and found this Base64 Encoded directory : -
+```
+/czNjcjN0MTMzNw==
+```
+
+looks pretty weird to me, after decode it we get the plain text that is ```s3cr3t1337```
+
+I go to this directory in attempt to find the flag : -
+```
+https://eliteghost.tech/wall-e/s3cr3t1337
+```
+
+Just like ```Error 500``` chal, You supposed to to inspect it in order to get the flag. Lucky me I have dark reader extension so I got the flag right away but is is Base64 Encoded
+
+![pages3cr3t]()
+
+Decode it and we get the flag.
+
+flag : -
+```
+EG{R0B0tS_W1tH_B64_Wa5_So_FXN_R1GHT}
+```
+
+
+### Error 404
+
+![error404chal](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/WEB/Screenshot%202023-01-16%20212540.png?raw=true)
+
+This challenge provide us with this [link](https://eliteghost.tech/genuine/index.html) : -
+```
+https://eliteghost.tech/genuine/index.html
+```
+
+The page have multiple hyperlink text that directs to different things and I just open all the links possible
+
+One of the hyperlink text that states ```Description``` directs to a [link](https://eliteghost.tech/genuine/anepp.html) that says "Maybe Flag?" with a text that looks like Base64 Encoded : -
+```
+UlVkN1NsVTFOMTlMTVVSRU1VNUhmUT09
+```
+
+Decode it two times and we got the flag.
+
+flag : -
+```
+EG{JU57_K1DD1NG}
+```
+
+
+### TutTut

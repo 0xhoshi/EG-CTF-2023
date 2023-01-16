@@ -61,7 +61,7 @@
 
 ## OSINT
 ### Farewell
-![Farewell chal](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/OSINT/Screenshot%202023-01-16%20213043.png?raw=true)
+![Farewell](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/OSINT/Screenshot%202023-01-16%20213043.png?raw=true)
 
 For this challenge, we were given a letter that looks like this : -
 
@@ -80,7 +80,7 @@ EG{g3t_3xp0s3d}
 
 
 ### Broken Man
-![BrokenMan chal](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/OSINT/Screenshot%202023-01-16%20213057.png?raw=true)
+![BrokenMan](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/OSINT/Screenshot%202023-01-16%20213057.png?raw=true)
 
 As you can see in the chal description, it says ```@theniceguy4485 1 year ago``` what could this be? maybe it will be useful later
 
@@ -145,11 +145,11 @@ We were given a link to a ["Tempat Menarik di Ipoh"](https://www.caridestinasi.c
 
 After an extensive time of searching a place that looks like the image given, I found a place that does looks similar to the image, the place is ```Dataran KTM Ipoh```
 
-![gambardataran](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/OSINT/MATERIAL/Screenshot%202023-01-16%20235232.png?raw=true)
+![dataran](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/OSINT/MATERIAL/Screenshot%202023-01-16%20235232.png?raw=true)
 
 I decide to scroll down the image section of ```Dataran KTM Ipoh``` in Google Maps and found an [image](https://www.google.com/maps/place/Dataran+KTM+Ipoh/@4.5971665,101.0738315,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipNTAXfBHnmXv9fw8mNoxuTvMX7jIup5VTVnNr2T!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipNTAXfBHnmXv9fw8mNoxuTvMX7jIup5VTVnNr2T%3Dw203-h404-k-no!7i591!8i1178!4m7!3m6!1s0x31caec7faab3f6c3:0x1eae66eaff84acff!8m2!3d4.5971665!4d101.0738315!14m1!1BCgIgARICGAI) uploaded by XioN that looks exactly like the image given in the challenge : -
 
-![pokemonimage](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/OSINT/MATERIAL/Screenshot%202023-01-16%20235847.png?raw=true)
+![pokemongo2](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/OSINT/MATERIAL/Screenshot%202023-01-16%20235847.png?raw=true)
 
 At the bottom of the image, there is a link that directs to EliteGhost Facebook account
 
@@ -177,7 +177,7 @@ EG{L0T5_0F_M3M0R135}
 
 
 ### Thirsty
-![thirsty chal](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/OSINT/Screenshot%202023-01-16%20213132.png?raw=true)
+![thirsty](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/OSINT/Screenshot%202023-01-16%20213132.png?raw=true)
 
 Long story short, Pikachu wants Starbucks's Frappuccino.
 
@@ -185,7 +185,7 @@ We were given three materials that is ```Menu.zip```, ```Place.zip``` that requi
 
 ```pokemon.jpg``` is an image of Pokemon Go map just like ```Oldest Historical Tree``` but with different place.
 
-![medangopeng](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/OSINT/MATERIAL/pokemon(2).jpg?raw=true)
+![pokemongo3](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/OSINT/MATERIAL/pokemon(2).jpg?raw=true)
 
 I searched for ```Starbucks in Ipoh``` in Google Maps and the first place that showed up was Starbucks Ipoh Parade, but the map's terrain doesn't seem similar as the image provided
 
@@ -200,11 +200,11 @@ Starbucks Medan Gopeng
 
 It contains an image to someone's Instagram feed, judging by the image given, this "someone's" account is following eliteghostmy Instagram account
 
-![pngnya](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/OSINT/MATERIAL/photo_2023-01-11_19-08-09.jpg?raw=true)
+![insta](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/OSINT/MATERIAL/photo_2023-01-11_19-08-09.jpg?raw=true)
 
 So i scrolled through the list of eliteghostmy followers an trry to find an account that have the same profile pics as the one in the image.
 
-![instadia](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/OSINT/MATERIAL/Screenshot%202023-01-17%20005051.png?raw=true)
+![instapost](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/OSINT/MATERIAL/Screenshot%202023-01-17%20005051.png?raw=true)
 
 Found it !! the account is [nnshuhada._ ](https://www.instagram.com/nnshuada._/)
 
@@ -331,13 +331,13 @@ EG{REST_WITH_COFFEE}
 
 
 ### SixSenses
-![sixsenses chal](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/OSINT/Screenshot%202023-01-16%20213156.png?raw=true)
+![sixsenses](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/OSINT/Screenshot%202023-01-16%20213156.png?raw=true)
 
 Apart from ```Oldest Historical Tree```, This is another challenge that I found to be very interesting
 
 They provide us with an image of what is seems to be is a cipher based on sign language
 
-![bahsaisyarat](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/OSINT/MATERIAL/Screenshot%202023-01-17%20012132.png?raw=true)
+![signlang](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/OSINT/MATERIAL/Screenshot%202023-01-17%20012132.png?raw=true)
 
 I searched for [sign language cipher](https://www.dcode.fr/american-sign-language) and decoded it
 
@@ -368,7 +368,7 @@ We already got an ```eye```, the remaining are ```ear```, ```tongue``` and ```no
 
 #### Ear
 
-![telinga](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/OSINT/MATERIAL/Screenshot%202023-01-17%20014830.png?raw=true)
+![ear](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/OSINT/MATERIAL/Screenshot%202023-01-17%20014830.png?raw=true)
 
 This one is the most direct, You can see the post contain an image of ear with caption  ```_S3NS3```
 
@@ -379,7 +379,7 @@ _S3NS3
 
 #### Tongue
 
-![lidah](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/OSINT/MATERIAL/Screenshot%202023-01-17%20020321.png?raw=true)
+![tongue](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/OSINT/MATERIAL/Screenshot%202023-01-17%20020321.png?raw=true)
 
 Notice how Aiman highlights or posts doesnt contain anything related to tongue? That's why i decide to search for his following and found this [account](https://www.instagram.com/izzkhamilia/) and yes it does have tongue picture like i showed above
 
@@ -389,7 +389,7 @@ The order is ```sweet sour salty bitter``` which is a part of taste buds : -
 
 The cipher is ancient egypt hieroglyphs cipher : -
 
-![egypt hieroglyphs](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/OSINT/MATERIAL/687474~1.JPE?raw=true)
+![egypthieroglyphs](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/OSINT/MATERIAL/687474~1.JPE?raw=true)
 
 Decode it and we get the third part of the flag : -
 ```
@@ -397,7 +397,7 @@ IS_SO
 ```
 #### Nose
 
-![hidung](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/OSINT/MATERIAL/Screenshot%202023-01-17%20015210.png?raw=true)
+![nose](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/OSINT/MATERIAL/Screenshot%202023-01-17%20015210.png?raw=true)
 
 Back to aimantino22, The post contain an image of nose with a caption that appears to be an esoteric language called [Brainfxck](https://en.wikipedia.org/wiki/Brainfuck)
 
@@ -422,7 +422,7 @@ EG{S1X_S3NS3_IS_SO_R4R3}
 ## Web
 ### Japan
 
-![japanchal](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/WEB/Screenshot%202023-01-16%20212415.png?raw=true)
+![japan](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/WEB/Screenshot%202023-01-16%20212415.png?raw=true)
 
 This challenge provide us with a link to a Japan website that is [jprs.jp](https://jprs.jp/) and a pdf file called ```admin-sign-3.pdf``` that requires password.
 
@@ -441,7 +441,7 @@ EG{WH01S_L00KUP_1S_34SY}
 
 ### Error 500
 
-![error500chal](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/WEB/Screenshot%202023-01-16%20212457.png?raw=true)
+![error500](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/WEB/Screenshot%202023-01-16%20212457.png?raw=true)
 
 We were provided with a [domain](https://eliteghost.tech/unknown/) that is : -
 ```
@@ -449,11 +449,11 @@ https://eliteghost.tech/unknown/
 ```
 The flag is in the website and is written in white text to make it invisible, so you need to inspect it in order to get the flag.
 
-![patutnya](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/WEB/MATERIAL/Screenshot%202023-01-17%20024748.png?raw=true)
+![lightmode](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/WEB/MATERIAL/Screenshot%202023-01-17%20024748.png?raw=true)
 
 Luckily, I have dark reader extension so i got the flag right away just like that
 
-![takpatut](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/WEB/MATERIAL/Screenshot%202023-01-17%20024814.png?raw=true)
+![darkmode](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/WEB/MATERIAL/Screenshot%202023-01-17%20024814.png?raw=true)
 
 flag : -
 ```
@@ -463,7 +463,7 @@ EG{G1nZ_1s_H3r3}
 
 ### EVE
 
-![wechal](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/WEB/Screenshot%202023-01-16%20212517.png?raw=true)
+![eve](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/WEB/Screenshot%202023-01-16%20212517.png?raw=true)
 
 We were provided with a [link](https://eliteghost.tech/wall-e/) that will make you feel lonely : -
 ```
@@ -493,7 +493,7 @@ https://eliteghost.tech/wall-e/s3cr3t1337
 
 Just like ```Error 500``` chal, You supposed to to inspect it in order to get the flag. Lucky me I have dark reader extension so I got the flag right away but is is Base64 Encoded
 
-![pages3cr3t](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/WEB/MATERIAL/Screenshot%202023-01-17%20030456.png?raw=true)
+![s3cr3t](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/WEB/MATERIAL/Screenshot%202023-01-17%20030456.png?raw=true)
 
 Decode it and we get the flag.
 
@@ -505,7 +505,7 @@ EG{R0B0tS_W1tH_B64_Wa5_So_FXN_R1GHT}
 
 ### Error 404
 
-![error404chal](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/WEB/Screenshot%202023-01-16%20212540.png?raw=true)
+![error404](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/WEB/Screenshot%202023-01-16%20212540.png?raw=true)
 
 This challenge provide us with this [link](https://eliteghost.tech/genuine/index.html) : -
 ```
@@ -529,11 +529,11 @@ EG{JU57_K1DD1NG}
 
 ### TutTut
 
-![tututchal](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/WEB/Screenshot%202023-01-16%20212600.png?raw=true)
+![tuttut](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/WEB/Screenshot%202023-01-16%20212600.png?raw=true)
 
 This challenge provide us with an image that shows a morse code for numbers and a link
 
-![gamabr](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/WEB/MATERIAL/morsecode(2).png?raw=true)
+![morsecode](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/WEB/MATERIAL/morsecode(2).png?raw=true)
 
 Go to the [link](https://eliteghost.tech/IV.html) and it says : -
 ```
@@ -557,7 +557,7 @@ EG{L34RN_M0RS3_C0D3}
 
 ### Birthday
 
-![bedaychal](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/WEB/Screenshot%202023-01-16%20212617.png?raw=true)
+![birthday](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/WEB/Screenshot%202023-01-16%20212617.png?raw=true)
 
 This challenge provide us with one zip file, ```present.zip``` that requires password
 
@@ -663,7 +663,7 @@ EG{3L1T3GH0ST_4C4D3MY}
 
 ### Diamond
 
-![diamondchal](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/REVERSE%20ENGINEERING/Screenshot%202023-01-16%20212209.png?raw=true)
+![diamond](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/REVERSE%20ENGINEERING/Screenshot%202023-01-16%20212209.png?raw=true)
 
 This challenge provide us with a file that is written in Ruby, The content of the file looks like this : -
 ```
@@ -696,15 +696,15 @@ def rot13(s)
   ```
   
   
-  ### Vault
+### Vault
   
-  ![vaultchal](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/REVERSE%20ENGINEERING/Screenshot%202023-01-16%20212225.png?raw=true)
+![vault](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/REVERSE%20ENGINEERING/Screenshot%202023-01-16%20212225.png?raw=true)
   
-  This challenge provide us with a text file ```passcode.txt``` and a zip file ```vault.zip``` that require password obtained from ```passcode.txt```
+This challenge provide us with a text file ```passcode.txt``` and a zip file ```vault.zip``` that require password obtained from ```passcode.txt```
   
-  ```passcode.txt``` content looks like this : -
-  ```
-  x = 1337
+```passcode.txt``` content looks like this : -
+```
+x = 1337
 y = x % 882726
 z = int(str(y)[::-1])
 a = z * y
@@ -737,7 +737,7 @@ EG{M4THS_1S_FUN}
 
 ### Complexity
 
-![complexitychal](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/REVERSE%20ENGINEERING/Screenshot%202023-01-16%20212252.png?raw=true)
+![complexity](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/REVERSE%20ENGINEERING/Screenshot%202023-01-16%20212252.png?raw=true)
 
 This challenge provide us with a file that is written in Java and all you need is patience ; )
 
@@ -745,7 +745,7 @@ The code is just a bunch of nonsense, you need to locate the flag that was hid s
 
 Using my eagle eye, I manage to locate the flag that is Base64 Encoded : -
 
-![gambarbukti](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/REVERSE%20ENGINEERING/Screenshot%202023-01-17%20040717.png?raw=true)
+![encodedflag](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/REVERSE%20ENGINEERING/Screenshot%202023-01-17%20040717.png?raw=true)
 
 ```
 REZ7U0czUTNfMVJfNEtWNFhSX0VLNFZ9
@@ -761,7 +761,7 @@ EG{TH3R3_1S_4LW4YS_FL4W}
 
 ### Ordered
 
-![orderdechal](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/REVERSE%20ENGINEERING/Screenshot%202023-01-16%20212314.png?raw=true)
+![ordered](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/REVERSE%20ENGINEERING/Screenshot%202023-01-16%20212314.png?raw=true)
 
 This challenge provide us with a file that is written in C++ that looks like this : -
 ```
@@ -822,7 +822,7 @@ EG{H4X0R}
 
 ### Vault 2.0
 
-![vault2.0chal](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/REVERSE%20ENGINEERING/Screenshot%202023-01-16%20212332.png?raw=true)
+![vault2.0](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/REVERSE%20ENGINEERING/Screenshot%202023-01-16%20212332.png?raw=true)
 
 This challenge provide us with a text file ```passcode.txt``` and zip file ```flag.zip``` that requires password
 
@@ -898,7 +898,7 @@ EG{4LW4YS_G3T_TR0LL3D}
 ## Cryptography
 ### WASD
 
-![wasdchal](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/CRYPTOGRAPHY/Screenshot%202023-01-16%20211940.png?raw=true)
+![wasd](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/CRYPTOGRAPHY/Screenshot%202023-01-16%20211940.png?raw=true)
 
 This challenge provide us with a text file ```flag.txt``` that contains this cipher: -
 ```
@@ -917,11 +917,11 @@ EG{S3CR3T_C0D3}
 
 ### Cartoon
 
-![cartoonchal](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/CRYPTOGRAPHY/CARTOON/Screenshot%202023-01-16%20212011.png?raw=true)
+![cartoon](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/CRYPTOGRAPHY/CARTOON/Screenshot%202023-01-16%20212011.png?raw=true)
 
 This challenge provide us with an image of weird-looking cipher
 
-![pelik](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/CRYPTOGRAPHY/CARTOON/flag(5).png?raw=true)
+![dancingmen](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/CRYPTOGRAPHY/CARTOON/flag(5).png?raw=true)
 
 So I searched up weird-looking cipher (literally) and found [this](https://www.dcode.fr/dancing-men-cipher)
 
@@ -937,11 +937,11 @@ EG{UNBELIEVABLECIPHER}
 
 ### Doraemon
 
-![doraemonchal](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/CRYPTOGRAPHY/DORAEMON/Screenshot%202023-01-16%20212126.png?raw=true)
+![doraemon](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/CRYPTOGRAPHY/DORAEMON/Screenshot%202023-01-16%20212126.png?raw=true)
 
 This challenge provide us with an image of weird-looking cipher (again)
 
-![peliklagi](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/CRYPTOGRAPHY/DORAEMON/flag(5).png?raw=true)
+![dorabella](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/CRYPTOGRAPHY/DORAEMON/flag(5).png?raw=true)
 
 Luckily, I came across this cipher while searched up for ```Cartoon``` and this cipher is called [Dorabella Cipher](https://www.dcode.fr/dorabella-cipher)
 
@@ -954,7 +954,7 @@ EG{DORABELLACHPHER}
 
 ### DoReMi
 
-![doremichal](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/CRYPTOGRAPHY/DOREMI/Screenshot%202023-01-16%20212043.png?raw=true)
+![doremi](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/CRYPTOGRAPHY/DOREMI/Screenshot%202023-01-16%20212043.png?raw=true)
 
 This challenge provide us with an image of what it looks like is a music sheet 
 
@@ -979,7 +979,7 @@ Definitely always hear this while watching an action movies
 
 As the the title suggests, its a alphabet phonetic in NATO
 
-![gambarnato](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/CRYPTOGRAPHY/GettyImages-1060490970-dcac66d9cda841638d49bc10f5dc1a8b.jpg?raw=true)
+![natophonetic](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/CRYPTOGRAPHY/GettyImages-1060490970-dcac66d9cda841638d49bc10f5dc1a8b.jpg?raw=true)
 
 Decode it and we get the flag
 
@@ -994,7 +994,7 @@ EG{ROGERTHATSIR}
 ## Programming
 ### Rigourous
 
-![riguruschal](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/PROGRAMMING/Screenshot%202023-01-16%20211908.png?raw=true)
+![rigourous](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/PROGRAMMING/Screenshot%202023-01-16%20211908.png?raw=true)
 
 This challenge provide us a zip file ```flag.zip``` that contains 4 main text files that is : -
 ```

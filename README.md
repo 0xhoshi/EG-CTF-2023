@@ -28,7 +28,9 @@
 - [**Cryptography**](#Cryptography)
   - [WASD](#WASD)
   - [Cartoon](#Cartoon)
+  - [Doraemon](#Doraemon)
   - [DoReMi](#DoReMi)
+  - [NATO](#NATO)
 
 - [**Steganography**](#Steganography)
   - [CatMeow](#CatMeow)
@@ -743,7 +745,7 @@ The code is just a bunch of nonsense, you need to locate the flag that was hid s
 
 Using my eagle eye, I manage to locate the flag that is Base64 Encoded : -
 
-![gambarbukti]()
+![gambarbukti](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/REVERSE%20ENGINEERING/Screenshot%202023-01-17%20040717.png?raw=true)
 
 ```
 REZ7U0czUTNfMVJfNEtWNFhSX0VLNFZ9
@@ -854,7 +856,7 @@ PASSCODE R SUM OF A AN B,
 DIFF OF C AN D, 
 PRODUKT OF A AN B, 
 QUOSHUNT OF E AN F
-VISIBL E'passcode
+VISIBLE 'passcode
 ```
 
 To make it easier, Lets break up the code and calculate it manually
@@ -892,3 +894,96 @@ EG{4LW4YS_G3T_TR0LL3D}
 
 
 ---------------------------------------------------------------------------
+
+## Cryptography
+### WASD
+
+![wasdchal](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/CRYPTOGRAPHY/Screenshot%202023-01-16%20211940.png?raw=true)
+
+This challenge provide us with a text file ```flag.txt``` that contains this cipher: -
+```
+WFPA2XE2R)X9S2{
+```
+
+From the challenge description, It is obvious that this use [Keyboard Shift Cipher](https://www.dcode.fr/keyboard-shift-cipher)
+
+Decode it and we get the flag
+
+flag : -
+```
+EG{S3CR3T_C0D3}
+```
+
+
+### Cartoon
+
+![cartoonchal](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/CRYPTOGRAPHY/CARTOON/Screenshot%202023-01-16%20212011.png?raw=true)
+
+This challenge provide us with an image of weird-looking cipher
+
+![pelik](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/CRYPTOGRAPHY/CARTOON/flag(5).png?raw=true)
+
+So I searched up weird-looking cipher (literally) and found [this](https://www.dcode.fr/dancing-men-cipher)
+
+The Cipher is actually named Dancing Men Cipher
+
+Decode it and we get the flag
+
+flag : -
+```
+EG{UNBELIEVABLECIPHER} 
+```
+
+
+### Doraemon
+
+![doraemonchal](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/CRYPTOGRAPHY/DORAEMON/Screenshot%202023-01-16%20212126.png?raw=true)
+
+This challenge provide us with an image of weird-looking cipher (again)
+
+![peliklagi](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/CRYPTOGRAPHY/DORAEMON/flag(5).png?raw=true)
+
+Luckily, I came across this cipher while searched up for ```Cartoon``` and this cipher is called [Dorabella Cipher](https://www.dcode.fr/dorabella-cipher)
+
+Decode it and we get the flag
+
+flag : -
+```
+EG{DORABELLACHPHER}
+```
+
+### DoReMi
+
+![doremichal](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/CRYPTOGRAPHY/DOREMI/Screenshot%202023-01-16%20212043.png?raw=true)
+
+This challenge provide us with an image of what it looks like is a music sheet 
+
+![musicsheet](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/CRYPTOGRAPHY/DOREMI/flaggg(1).jpg?raw=true)
+
+I found this decoder called [Music Sheets Decoder](https://www.dcode.fr/music-sheet-cipher) and use it to decode the message in the image provided
+
+flag : -
+```
+EG{IFMUSICWASINCODE}
+```
+
+### NATO
+
+![nato](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/CRYPTOGRAPHY/Screenshot%202023-01-16%20212107.png?raw=true)
+
+This challenge provide us with a text file that contains a cipher
+```
+EG{Romeo Oscar Golf Echo Romeo Tango Hotel Alpha Tango Sierra India Romeo}
+```
+Definitely always hear this while watching an action movies
+
+As the the title suggests, its a alphabet phonetic in NATO
+
+![gambarnato]()
+
+Decode it and we get the flag
+
+flag : -
+```
+EG{ROGERTHATSIR}
+```

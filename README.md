@@ -437,7 +437,7 @@ EG{WH01S_L00KUP_1S_34SY}
 ```
 
 
-### Error 500
+### Error500
 
 ![error500chal](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/WEB/Screenshot%202023-01-16%20212457.png?raw=true)
 
@@ -501,7 +501,7 @@ EG{R0B0tS_W1tH_B64_Wa5_So_FXN_R1GHT}
 ```
 
 
-### Error 404
+### Error404
 
 ![error404chal](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/WEB/Screenshot%202023-01-16%20212540.png?raw=true)
 

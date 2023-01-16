@@ -32,7 +32,7 @@
   - [DoReMi](#DoReMi)
   - [NATO](#NATO)
 
-- [**Steganography**](#Steganography)
+<!--- [**Steganography**](#Steganography)
   - [CatMeow](#CatMeow)
   - [Mastery](#Mastery)
   - [Class](#Class)
@@ -52,7 +52,7 @@
   - [Corrupted](#Corrupted)
   - [Signal](#Signal)
   - [AutoBot](#AutoBot)
-  - [Broken Oyen](#BrokenOyen)
+  - [Broken Oyen](#BrokenOyen)-->
 
 - [**Programming**](#Programming)
   - [Rigorous](#Rigorous)
@@ -979,11 +979,86 @@ Definitely always hear this while watching an action movies
 
 As the the title suggests, its a alphabet phonetic in NATO
 
-![gambarnato]()
+![gambarnato](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/CRYPTOGRAPHY/GettyImages-1060490970-dcac66d9cda841638d49bc10f5dc1a8b.jpg?raw=true)
 
 Decode it and we get the flag
 
 flag : -
 ```
 EG{ROGERTHATSIR}
+```
+
+
+---------------------------------------------------------------------------
+
+## Programming
+### Rigourous
+
+![riguruschal](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/PROGRAMMING/Screenshot%202023-01-16%20211908.png?raw=true)
+
+This challenge provide us a zip file ```flag.zip``` that contains 4 main text files that is : -
+```
+[^a-zA-Z0-9_].apk.txt:
+
+^(\\S+)\\s+(\\S+)$ || D'`;M#8n<;G3zx6Te@,PqMo:n%*#(4hffBA.~}+{)9rqvutsl2pohPle+ihJIedcb[!_^@VUTYRQPtTSRQ3ONGkjW
+
+[^a-zA-Z0-9_].ipa.txt:
+
+^(\\S+)\\s+(\\S+)$ || D'``_9"n[HX9ih6fe3,sN)LoJ87jGX~DeASc~a_N):rqvutsl2johgfkjc)gIH^]\"`_A@\Uy<;QPt76LpP2NMLKDhHGF?>bO
+
+[^a-zA-Z0-9_].exe.txt:
+
+^(\\S+)\\s+(\\S+)$ || D'`%_9"=[l:{8VC54uQ>0).:]%$ki!g21{"cx}O<)srwp6tsrkpongf,jiKgf_%F\[`_^]VzZ<;WVOsMRQJnH0LEJCBf)?DC<;_L
+
+[^a-zA-Z0-9_].osx.txt:
+
+^(\\S+)\\s+(\\S+)$ || D'`N@9>~ZZXXyV6Tuu2rNM;:&+H6GiWfBTzcaP|N)y[wpunsl2pohglkjiba'edFb[!_^@?UTxRQPOTSLpP2NMLEDhU
+```
+
+and a ```formula.txt``` that seems to be an arrangement for the 4 main files : -
+```
+apk: f(x) = sin(x^2 + 1) + 1
+ipa: 2
+exe: 3
+osx: 4
+```
+
+f(x) = sin(x^2 + 1) + 1 is equal to 1, So 
+```
+apk: 1
+ipa: 2
+exe: 3
+osx: 4
+```
+As you can see from the 4 main files, there is a useless Regular Expressions at the start of the statement : ```^(\\S+)\\s+(\\S+)$ ||```
+
+Delete this on every file and we will get
+```
+[^a-zA-Z0-9_].apk.txt:
+
+D'`;M#8n<;G3zx6Te@,PqMo:n%*#(4hffBA.~}+{)9rqvutsl2pohPle+ihJIedcb[!_^@VUTYRQPtTSRQ3ONGkjW
+
+[^a-zA-Z0-9_].ipa.txt:
+
+D'``_9"n[HX9ih6fe3,sN)LoJ87jGX~DeASc~a_N):rqvutsl2johgfkjc)gIH^]\"`_A@\Uy<;QPt76LpP2NMLKDhHGF?>bO
+
+[^a-zA-Z0-9_].exe.txt:
+
+D'`%_9"=[l:{8VC54uQ>0).:]%$ki!g21{"cx}O<)srwp6tsrkpongf,jiKgf_%F\[`_^]VzZ<;WVOsMRQJnH0LEJCBf)?DC<;_L
+
+[^a-zA-Z0-9_].osx.txt:
+
+D'`N@9>~ZZXXyV6Tuu2rNM;:&+H6GiWfBTzcaP|N)y[wpunsl2pohglkjiba'edFb[!_^@?UTxRQPOTSLpP2NMLEDhU
+```
+
+The statement above is actually a code written in esoteric programming language called Malbolge, So if we execute the code one by one using [Malbolge Compiler](https://www.tutorialspoint.com/execute_malbolge_online.php) and combine it together we will get the flag that is Base64 Encoded
+```
+RUd7TTRMQjBMRzNfMVNfSDRSRH0=
+```
+
+Decode it and we get the flag
+
+flag : -
+```
+EG{M4LB0LG3_1S_H4RD}
 ```

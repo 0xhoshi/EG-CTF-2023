@@ -577,7 +577,7 @@ From the file, we obtained an image that is a poster of EGCTF2023 but there is n
 
 So I bring up [aperisolve.com](https://www.aperisolve.com) to know more in details about the image provided.
 
-There is quite a bit of text in this ZSteg section 
+There is quite a bit of text in this Zsteg section 
 
 ![zsteg](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/WEB/MATERIAL/Screenshot%202023-01-17%20033803.png?raw=true)
 
@@ -589,3 +589,306 @@ flag : -
 ```
 eg{h4ppy_n3w_y34r_ctf_2023}
 ```
+
+
+---------------------------------------------------------------------------
+
+## Reverse Engineering
+### OldButGold
+
+![oldbutgold](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/REVERSE%20ENGINEERING/Screenshot%202023-01-16%20212147.png?raw=true)
+
+This challenge provide us with one text file that contains as below : -
+```
+subroutine check_password(input, result)
+  implicit none
+  character(len=*), intent(in) :: input
+  logical, intent(out) :: result
+ 
+  integer, parameter :: defcon(18) = [51, 76, 49, 84, 51, 71, 72, 48, 83, 84, 95, 52, 67, 52, 68, 51, 77, 89]
+  character(len=1) :: input_char
+  integer :: input_char_code
+  logical :: correct
+  
+  correct = .true.
+  do i = 1, len(input)
+    input_char = input(i:i)
+    input_char_code = int(input_char)
+    if (input_char_code - defcon(i)).abs /= 1 then
+      correct = .false.
+      exit
+    end if
+  end do
+  result = correct
+end subroutine check_password
+
+program test
+  implicit none
+  
+  character(len=*), parameter :: password_prompt = "Enter password:"
+  character(len=*), parameter :: defconx = "Now that's the flag! Put it with EG{}"
+  character(len=*), parameter :: incorrect_message = "Incorrect password."
+  character(len=*), parameter :: password
+  logical :: is_correct
+  
+  write(*,*) password_prompt
+  read(*,*) password
+  
+  call check_password(password, is_correct)
+  
+  if (is_correct) then
+    write(*,*) defconx
+  else
+    write(*,*) incorrect_message
+  end if
+end program test
+```
+
+Line of code that got my attention in this text file is : - 
+```
+integer, parameter :: defcon(18) = [51, 76, 49, 84, 51, 71, 72, 48, 83, 84, 95, 52, 67, 52, 68, 51, 77, 89]
+```
+
+That does looks like ASCII representation of character
+
+Using online [ASCII to text converter](https://www.duplichecker.com/ascii-to-text.php) and I got the flag
+
+flag : -
+```
+EG{3L1T3GH0ST_4C4D3MY}
+```
+
+
+### Diamond
+
+![diamondchal](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/REVERSE%20ENGINEERING/Screenshot%202023-01-16%20212209.png?raw=true)
+
+This challenge provide us with a file that is written in Ruby, The content of the file looks like this : -
+```
+def rot13(s)
+    k = "N-ZA-Mn-za-m"
+    return s.tr("A-Za-z", k)
+  end
+  
+  def c(p)
+    e = "F0_gu1f_1f_e0g13_J3yp0zr"
+    d = rot13(e)
+    if p == d
+      puts "Correct password, here's your flag! : EG{#{d}}"
+    else
+      puts "Wrong password"
+    end
+  end
+  
+  print "Enter password: "
+  password = gets.chomp
+  
+  c(password)
+  ```
+  
+  I see ```rot13```, I see ```"F0_gu1f_1f_e0g13_J3yp0zr"```, I [decode](https://rot13.com/), I got flag : )
+  
+  flag : -
+  ```
+  EG{S0_th1s_1s_r0t13_W3lc0me}
+  ```
+  
+  
+  ### Vault
+  
+  ![vaultchal](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/REVERSE%20ENGINEERING/Screenshot%202023-01-16%20212225.png?raw=true)
+  
+  This challenge provide us with a text file ```passcode.txt``` and a zip file ```vault.zip``` that require password obtained from ```passcode.txt```
+  
+  ```passcode.txt``` content looks like this : -
+  ```
+  x = 1337
+y = x % 882726
+z = int(str(y)[::-1])
+a = z * y
+g = x + y + z + a
+passcode = (x + g + y + z + a) * 2
+```
+
+just calculate it normally and you will get the passcode : -
+```
+y = x % 882726
+   = 1337 % 882726
+   = 1337
+z = 7331
+a = 7331 * 1337 = 9801547
+g = 1337 + 1337 + 7331 + 9801547 = 9811552
+passcode = (1337 + 9811552 + 1337 + 7331 + 9801547) * 2 
+
+= 39246208
+```
+
+```vault.zip``` password : -
+```
+39246208
+```
+
+flag : -
+```
+EG{M4THS_1S_FUN}
+```
+
+### Complexity
+
+![complexitychal](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/REVERSE%20ENGINEERING/Screenshot%202023-01-16%20212252.png?raw=true)
+
+This challenge provide us with a file that is written in Java and all you need is patience ; )
+
+The code is just a bunch of nonsense, you need to locate the flag that was hid somewhere in the code
+
+Using my eagle eye, I manage to locate the flag that is Base64 Encoded : -
+
+![gambarbukti]()
+
+```
+REZ7U0czUTNfMVJfNEtWNFhSX0VLNFZ9
+```
+
+You will need to decode it two times in order to get the flag, Base64 than ROT
+
+flag : -
+```
+EG{TH3R3_1S_4LW4YS_FL4W}
+```
+
+
+### Ordered
+
+![orderdechal](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/REVERSE%20ENGINEERING/Screenshot%202023-01-16%20212314.png?raw=true)
+
+This challenge provide us with a file that is written in C++ that looks like this : -
+```
+#include <iostream>
+
+int main() {
+    char A = 1 + 0;
+    char E = H + 5;
+    char B = E + 2;
+    char J = "}" + 10;
+    char F = 4 + 6;
+    char I = R + 9;
+    char D = "{" + 4;
+    char G = X + 7;
+    char C = G + 3;
+    char H = 0 + 8;
+    char FLAG = "?";
+    }
+```
+
+I dont know how to explain this, but the pattern is actually pretty obvious. Notice how ```A``` have ```1``` and ```B``` have ```2```?
+
+Lets list them in alphabetical order
+
+```
+    char A = 1 ;
+    char E = 5;
+    char B = 2;
+    char J = 10;
+    char F = 6;
+    char I = 9;
+    char D = 4;
+    char G = 7;
+    char C = 3;
+    char H = 8;
+```
+
+Maybe now you can see better? Notice how you can arrange them from ```1(A)``` to ```10(J)``` ?
+
+```
+    char A = 0 + 1;
+    char B = E + 2;
+    char C = G + 3;
+    char D = "{" + 4;
+    char E = H + 5;
+    char F = 4 + 6;
+    char G = X + 7;
+    char H = 0 + 8;
+    char I = R + 9;
+    char J = "}" + 10;
+```
+Andd done, we obtained the flag
+
+flag : -
+```
+EG{H4X0R}
+```
+
+### Vault 2.0
+
+![vault2.0chal](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/REVERSE%20ENGINEERING/Screenshot%202023-01-16%20212332.png?raw=true)
+
+This challenge provide us with a text file ```passcode.txt``` and zip file ```flag.zip``` that requires password
+
+The content of ```passcode.txt``` looks like this : -
+```
+HAI 1.2CAN H…BYE
+UNV->;?PN[-UN`-`aQV\LV-UN`-N-N-Vag->@@DV-UN`-N-O-Vag-D@@>V-UN`-N-P-Vag->E?@V-UN`-N-Q-Vag-?D@CV-UN`-N-R-Vag-?@D=V-UN`-N-S-Vag-FFFFV-UN`-N-]N``P\QR]N``P\QR-_-`bZ-\S-N-N[-O9-QVSS-\S-P-N[-Q9-]_\QbXa-\S-N-N[-O9-^b\`Ub[a-\S-R-N[-ScV`VOYR-/aur-}n☺☺p|qr-v☺G-/-N[-]N``P\QRV-UN`-N-e-Vag-@;>AVZ-V[-f_-Y\\]-b]]V[-f_-e-aVY-O\aU-`NRZ-e-N[-A;>A--VZ-V[-f_-Y\\]-b]]V[-f_-e-aVY-O\aU-`NRZ-e-N[-A;>A--f_-e-_-`bZ-\S-e-N[-=;=>VZ-\baaN-f_-Y\\]TVZZRU-eXaUeOfR
+```
+
+What in the world is that...
+
+The first line states : -
+```
+HAI 1.2CAN H…BYE
+```
+
+This is a hint that this entire gibberish-looking text is actually a code written in [LOLCODE](http://www.lolcode.org/) because every LOLCODE program will start with ```HAI 1.2 CAN HAS STDIO?``` and end with ```KTHXBYE```
+
+After doing some research, The code is encoded in ASCII +13 shift cipher, after decode it we will get : -
+```
+HAI 1.2
+CAN HAS STDIO?
+I HAS A A ITZ 1337
+I HAS A B ITZ 7331
+I HAS A C ITZ 1823
+I HAS A D ITZ 2736
+I HAS A E ITZ 2370
+I HAS A F ITZ 9999
+I HAS A PASSCODE
+PASSCODE R SUM OF A AN B, 
+DIFF OF C AN D, 
+PRODUKT OF A AN B, 
+QUOSHUNT OF E AN F
+VISIBL E'passcode
+```
+
+To make it easier, Lets break up the code and calculate it manually
+
+```
+A = 1337
+B = 7331
+C = 1823
+D = 2736
+E = 2370
+F = 9999
+PASSCODE =
+SUM OF A AND B (A + B) = 8668
+DIFF OF C AND D (C - D) = -913
+PRODUKT OF A AN B (A * B) = 9801547
+QUOSHUNT OF E AN F (2370 / 9999) = 0.2370237
+```
+
+The description already stated how the format of the passcode should be that is : -
+```
+xxxx--xxx-xxxxxxx-x.xxxxxxx
+```
+
+Insert the number we obtained from the calculation sequentially
+
+```flag.zip``` Password : -
+```
+8668--913-9801547-0.2370237
+```
+
+flag : -
+```
+EG{4LW4YS_G3T_TR0LL3D}
+```
+
+
+---------------------------------------------------------------------------

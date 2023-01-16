@@ -526,3 +526,66 @@ EG{JU57_K1DD1NG}
 
 
 ### TutTut
+
+![tututchal](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/WEB/Screenshot%202023-01-16%20212600.png?raw=true)
+
+This challenge provide us with an image that shows a morse code for numbers and a link
+
+![gamabr]()
+
+Go to the [link](https://eliteghost.tech/IV.html) and it says : -
+```
+The flag is not here, Try again!
+```
+
+The html file is written in Roman number that represents number ```4```
+
+Convert the Roman number to morse code by referring the image given and it will look like this : -
+```
+https://eliteghost.tech/....-.html
+```
+
+The flag is written on that page
+
+flag : -
+```
+EG{L34RN_M0RS3_C0D3}
+```
+
+
+### Birthday
+
+![bedaychal](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/WEB/Screenshot%202023-01-16%20212617.png?raw=true)
+
+This challenge provide us with one zip file, ```present.zip``` that requires password
+
+The hint is in the challenge itself
+```
+I mean, EliteGhost was here since 10's. But what about eliteghost.tech?
+```
+
+So I looked up [domain age checker](https://smallseotools.com/domain-age-checker/) and found out that eliteghost.tech was established on 12/10/2022
+
+Use that as a password to the zip file but in YYYY/MM/DD format, and it opened
+
+```present.zip``` password : -
+```
+20221012
+```
+
+From the file, we obtained an image that is a poster of EGCTF2023 but there is nothing suspicious in the image.
+
+So I bring up [aperisolve.com](https://www.aperisolve.com) to know more in details about the image provided.
+
+There is quite a bit of text in this ZSteg section 
+
+![zsteg]()
+
+Look thoroughly and found the flag : -
+
+![falgzst]()
+
+flag : -
+```
+eg{h4ppy_n3w_y34r_ctf_2023}
+```

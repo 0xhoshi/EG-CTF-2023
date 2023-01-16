@@ -69,7 +69,7 @@ As you can see, at the end of the letter, we were provided with a phone number t
 
 Out of curiousity, I searched for his number in an application called GetContact and just like that I found the flag :
 
-![getcontact]()
+![getcontact](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/OSINT/MATERIAL/msg-763160323-59716.jpg?raw=true)
 
 flag : -
 ```
@@ -387,7 +387,7 @@ The order is ```sweet sour salty bitter``` which is a part of taste buds : -
 
 The cipher is ancient egypt hieroglyphs cipher : -
 
-![egypt hieroglyphs]()
+![egypt hieroglyphs](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/OSINT/MATERIAL/687474~1.JPE?raw=true)
 
 Decode it and we get the third part of the flag : -
 ```

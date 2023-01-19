@@ -122,11 +122,18 @@ decoded it and we got a text that says : -
 
 So I searched for ```0hanif0``` in GitHub and try to find a repository named ```EGCTF2023```
 
-At the time im writing this writeup, ```0hanif0``` already deleted the repository, So I cant show how it exactly being done, sorry about that
+Andd just like that we got the fla... eh?
 
-BUT, of course I remember how I got trolled when opened the ```EGCTF2023``` repository instead of flag. >: (
+![repository]()
 
-After check the commits of the repository, I found the flag that is written upside down. : )
+Nah, we got trolled >: (
+
+So I decide to mess around 0hanif0 github to find the actual flag
+
+As expected, the flag is in one of the repository commits
+
+![flag]()
+
 
 flag : -
 ```
@@ -992,7 +999,7 @@ EG{ROGERTHATSIR}
 ---------------------------------------------------------------------------
 
 ## Programming
-### Rigourous
+### Rigorous
 
 ![rigourous](https://github.com/kanezare/EG-CTF-2023/blob/main/CHALLENGE/PROGRAMMING/Screenshot%202023-01-16%20211908.png?raw=true)
 

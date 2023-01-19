@@ -4,9 +4,9 @@
 
 - [**OSINT**](#OSINT)
   - [Farewell](#Farewell)
-  - [Broken Man](#BrokenMan)
+  - [Broken Man](#Broken-Man)
   - [Octopus](#Octopus)
-  - [Oldest Historical Tree](#OldestHistoricalTree)
+  - [Oldest Historical Tree](#Oldest-Historical-Tree)
   - [Thirsty](#Thirsty)
   - [SixSenses](#SixSenses)
 
@@ -18,7 +18,7 @@
   - [TutTut](#TutTut)
   - [Birthday](#Birthday)
 
-- [**Reverse Engineering**](#ReverseEngineering)
+- [**Reverse Engineering**](#Reverse-Engineering)
   - [OldButGold](#OldButGold)
   - [Diamond](#Diamond)
   - [Vault](#Vault)

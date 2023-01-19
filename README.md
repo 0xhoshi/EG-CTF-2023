@@ -124,15 +124,15 @@ So I searched for ```0hanif0``` in GitHub and try to find a repository named ```
 
 Andd just like that we got the fla... eh?
 
-![repository]()
+![repository](https://github.com/5kitsune/EG-CTF-2023/blob/main/CHALLENGE/OSINT/MATERIAL/Screenshot%202023-01-20%20022144.png?raw=true)
 
 Nah, we got trolled >: (
 
 So I decide to mess around 0hanif0 github to find the actual flag
 
-As expected, the flag is in one of the repository commits
+As expected, the flag is in one of the repository commits : )
 
-![flag]()
+![flag](https://github.com/5kitsune/EG-CTF-2023/blob/main/CHALLENGE/OSINT/MATERIAL/Screenshot%202023-01-20%20023210.png?raw=true)
 
 
 flag : -

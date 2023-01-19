@@ -128,9 +128,9 @@ Andd just like that we got the fla... eh?
 
 Nah, we got trolled >: (
 
-So I decide to mess around 0hanif0 github to find the actual flag
+So I decide to mess around 0hanif0's EGCTF2023 repository to find the actual flag
 
-As expected, the flag is in one of the repository commits : )
+As expected, the flag is in one of the repository's commits : )
 
 ![flag](https://github.com/5kitsune/EG-CTF-2023/blob/main/CHALLENGE/OSINT/MATERIAL/Screenshot%202023-01-20%20023210.png?raw=true)
 
